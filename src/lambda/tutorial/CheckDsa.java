@@ -2,7 +2,6 @@ package lambda.tutorial;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class CheckDsa {
@@ -26,7 +25,7 @@ public class CheckDsa {
 //            }
 //        });
 
-        Collections.sort(lst, (s1,s2)-> s1.marks - s2.marks);
+        Collections.sort(lst, (s1, s2) -> s1.marks - s2.marks);
 
 
         lst.forEach(s -> System.out.println(s.name + " " + s.rollNo + " " + s.marks));
