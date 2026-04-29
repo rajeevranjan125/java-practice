@@ -2,6 +2,7 @@ package lambda.tutorial;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class CheckDsa {
@@ -14,9 +15,11 @@ public class CheckDsa {
         lst.add(new Student("babloo", 89, 2));
 
 
-//        SortByNames sortByNames = new SortByNames();
+        SortByNames sortByNames = new SortByNames();
 //        SortByMarks sortByMarks = new SortByMarks();
 //        SortByRollNo sortByRollNo = new SortByRollNo();
+
+        Collections.sort(lst, sortByNames);
 
 //        Collections.sort(lst, new Comparator<Student>(){
 //            @Override
@@ -32,14 +35,14 @@ public class CheckDsa {
     }
 }
 
-//class SortByNames implements Comparator<Student> {
-//
-//    @Override
-//    public int compare(Student s1, Student s2) {
-//
-//        return s1.name.compareTo(s2.name);
-//    }
-//}
+class SortByNames implements Comparator<Student> {
+
+    @Override
+    public int compare(Student s1, Student s2) {
+
+        return s1.name.compareTo(s2.name);
+    }
+}
 //
 //class SortByMarks implements Comparator<Student> {
 //
