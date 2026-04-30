@@ -11,7 +11,7 @@ public class LambdaPractice {
 
         Function<Integer, String> square = x -> String.valueOf(x * x);
 
-        System.out.println(square.apply(5));
+//        System.out.println(square.apply(5));
 
 //        Print each element of a list
 //
