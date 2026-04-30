@@ -35,16 +35,5 @@ public class LambdaPractice {
 //        Check if a number is even
 
         Predicate<Integer> checkEven = (x) -> x % 2 == 0;
-
-        System.out.println(checkEven.test(55));
-        Predicate<Integer> checkEven1 = (x) -> x % 2 == 0;
-
-        System.out.println(checkEven.test(55));
-        Predicate<Integer> checkEven2 = (x) -> x % 2 == 0;
-
-        System.out.println(checkEven.test(55));
-        Predicate<Integer> checkEven3 = (x) -> x % 2 == 0;
-
-        System.out.println(checkEven.test(55));
     }
 }
