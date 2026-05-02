@@ -4,17 +4,28 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Streams {
     public static void main(String[] args) {
 
-        List<Integer> list = new ArrayList<>(Arrays.asList(10, 10, 2, 3, 4, 5, 6, 7));
+//        List<Integer> list = new ArrayList<>(Arrays.asList(10, 10, 2, 3, 4, 5, 6, 7));
+//
+//
+//        List<Integer> ans = list.stream()
+//                .distinct()
+//                .toList();
+//
+//        List<List<Integer>> list = new ArrayList<>(
+//                Arrays.asList(Arrays.asList(2, 10, 2, 3, 4, 5, 6, 7),
+//                        Arrays.asList(10, 10, 2, 3, 4, 5, 6, 7))
+//        );
+//
+//        list.stream()
+//                .flatMap(x -> x.stream())
+//                .forEach(System.out::println);
 
-
-        List<Integer> ans = list.stream()
-                .distinct()
-                .toList();
 
 //      Stream<Integer> stream=  Stream.of(1,2,3);
 
@@ -46,6 +57,12 @@ public class Streams {
 //                .peek(n -> System.out.println("After map: " + n))
 //                .forEach(System.out::println);
 
+
+//        Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5);
+//
+//        IntStream intStream = stream.mapToInt((x) -> x * x);
+//
+//        intStream.forEach(System.out::println);
 
     }
 }
