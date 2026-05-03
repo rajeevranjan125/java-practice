@@ -3,8 +3,10 @@ package wrapper.tutorial;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class Streams {
@@ -63,6 +65,23 @@ public class Streams {
 //        IntStream intStream = stream.mapToInt((x) -> x * x);
 //
 //        intStream.forEach(System.out::println);
+
+//        Stream<Integer> stream = Stream.of(1,2,3);
+//
+//        stream.mapToLong(x->x).forEach(System.out::println);
+//        int[] arr = new int[]{1, 2, 3};
+//        List<int[]> ans = Arrays.asList(arr);  // Returns List<int[]> (not List<Integer>)
+//
+//        ans.add(0,8);
+//
+//        ans.forEach(System.out::print);
+
+
+//        List<Integer> ans = new ArrayList<>(List.of(1,2,3,4));
+
+//        int sum = Stream.of(1, 23).reduce(0,(a, b) -> a + b);
+//
+//        System.out.println(sum);
 
     }
 }
