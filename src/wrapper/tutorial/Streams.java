@@ -1,9 +1,6 @@
 package wrapper.tutorial;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
@@ -83,5 +80,63 @@ public class Streams {
 //
 //        System.out.println(sum);
 
+//        List<Integer> ans = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6));
+//
+//        long i = ans.stream()
+//                .filter(x -> x % 2 == 0)
+//                .count();
+//
+//        System.out.println(i);
+
+//        List<Integer> ans = new ArrayList<>(List.of(1,2,3,4,5,6,7,8,9,10));
+//
+//        Optional<Integer> i = ans.stream()
+//                .map(x -> x * 3)
+//                .findAny();
+//
+//        System.out.println(i.get());
+
+//         Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+//        OptionalInt max = stream.mapToInt(x -> x).max();
+//        OptionalInt min = stream.mapToInt(x->x).min();
+//        OptionalDouble ave = stream.mapToInt(x->x).average();
+
+//        OptionalInt sum = stream.mapToInt(x->x).max();
+//        System.out.println(sum.getAsInt());
+
+
+//        Runnable mySecondThread = new MySecondThread();
+
+//        Thread thread = new Thread(() -> System.out.println("helllllo world"));
+//
+//        thread.start();
+
+//        List<Integer> ans = new ArrayList<>(List.of(9, 4, 1, 6, 3, 83));
+//
+//        ans.sort((a,b)->a-b);
+//
+//        System.out.println(ans);
+
+//        Runnable r = ()-> System.out.println("hello world");
+//
+//        r.run();
     }
 }
+
+//class MyThread extends Thread {
+//
+//
+//    @Override
+//    public void run() {
+//        System.out.println("hey");
+//    }
+//}
+
+//class MySecondThread implements Runnable {
+//
+//    @Override
+//    public void run() {
+//        System.out.println("hello");
+//    }
+//}
