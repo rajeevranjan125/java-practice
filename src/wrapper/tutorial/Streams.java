@@ -121,6 +121,45 @@ public class Streams {
 //        Runnable r = ()-> System.out.println("hello world");
 //
 //        r.run();
+
+//        System.out.println("main thread name is: " + Thread.currentThread().getName());
+//        System.out.println("main thread id is :" + Thread.currentThread().getId());
+//
+//        Thread t1 = new Thread(
+//                () -> {
+//                    System.out.println(" thread name t1 :" + Thread.currentThread().getName());
+//                    System.out.println("thread id t2 :" + Thread.currentThread().getId());
+//                }
+//        );
+//
+//
+//       Thread t2 = new Thread(
+//                () -> {
+//                    System.out.println("t2 thread name is :" + Thread.currentThread().getName());
+//                    System.out.println("t2 thread id is: " + Thread.currentThread().getId());
+//                }
+//        );
+//
+//       t1.start();
+//       t2.start();
+//-----IMPORTANT----:
+//-------------------------------------------------------------------------------------------------------------------
+        //note 1: start() method tells OS to make new thread and then run() method called by start() method
+        //note 2: if you do t1.run() then main thread will call because without start method,
+        // thread will not make by OS so it called the current thread which is main thread
+// -------------------------------------------------------------------------------------------------------------------
+
+//-----IMPORTANT----:
+//       Thread t1= new Thread(
+//                ()->{
+//                    System.out.println("first thread");
+//                }
+//        );
+//
+//       t1.start();
+////       t1.start(); cannot start() same thread twice
+
+
     }
 }
 
