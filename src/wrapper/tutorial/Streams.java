@@ -171,6 +171,14 @@ public class Streams {
 //        System.out.println("hey");
 //    }
 //}
+class MyThread extends Thread {
+
+
+    @Override
+    public void run() {
+        System.out.println("hey");
+    }
+}
 
 //class MySecondThread implements Runnable {
 //
