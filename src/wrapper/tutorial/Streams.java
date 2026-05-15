@@ -179,7 +179,7 @@ class MyThread extends Thread {
         System.out.println("hey");
     }
 }
-class MyThread extends Thread {
+class MyThread2 extends Thread {
 
 
     @Override
