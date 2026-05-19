@@ -1,9 +1,18 @@
 package ibm;
 
+import java.util.Random;
+
 public class ArmstrongNumber {
     public static void main(String[] args) {
 
-        System.out.println(isArmstrong(123));
+//        System.out.println(isArmstrong(123));
+
+        Random random = new Random();
+        Random random1= new Random();
+
+       int ran = random.nextInt(5);
+
+        System.out.println(ran);
     }
 
     public static boolean isArmstrong(int num) {
